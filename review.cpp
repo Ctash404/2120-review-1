@@ -1,13 +1,13 @@
 #include "review.h"
 #include <iostream>
 #include <fstream>
-void ReadStdIn()
+void ReadStdIn(int argc, char* argv[])
 {
     std::string myText;
 
-    std::ifstream MyFile ("T1i.txt");
+    std::ifstream MyFile (argv[1]);
 
-    while (getline (MyFile, myText))
+    while (MyFile >> myText)
     {
         std::cout << myText << std::endl;
     }

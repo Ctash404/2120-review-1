@@ -8,7 +8,7 @@
 
 
 int add(int a, int b);
-void ReadStdIn();
+void ReadStdIn(int argc, char* argv[]);
 int WriteOut(std::string output);
 int WriteOut(int output);
 int WriteOut(double output);

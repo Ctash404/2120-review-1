@@ -1,8 +1,8 @@
 #include "review.h"
 
-int main()
+int main(int argc, char* argv[])
 {
-    ReadStdIn();
+    ReadStdIn(argc, argv);
     
     return 0;
 }

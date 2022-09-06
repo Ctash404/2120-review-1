@@ -1,15 +1,18 @@
 #include "review.h"
 #include <iostream>
-#include <fstream>
-void ReadStdIn(int argc, char* argv[])
+
+void ReadStdIn()
 {
-    std::string myText;
+    int word;
+    double word2;
+    std::string word3;
 
-    std::ifstream MyFile (argv[1]);
+    std::cin >> word;
+    std::cin >> word2;
+    std::cin >> word3;    
 
-    while (MyFile >> myText)
-    {
-        std::cout << myText << std::endl;
-    }
-    MyFile.close();
+    std::cout << word << std::endl;
+    std::cout << word2 << std::endl;
+    std::cout << word3 << std::endl;
+
 }
